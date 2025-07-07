@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detonado Resident Evil</title>
+  <meta name="description" content="Detonado, piadas, vídeos e serviços com clima de Resident Evil!" />
+  <meta name="keywords" content="resident evil, piadas, humor, vídeos, consórcio, crédito, seguros, saúde capilar, hospedagem VPS" />
+  <meta name="author" content="Equipe Conectada" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Detonado Resident Evil">
+  <meta property="og:description" content="Detonado, piadas e serviços no clima sombrio de Resident Evil!">
+  <meta property="og:image" content="https://via.placeholder.com/800x400.png?text=Detonado+Resident+Evil">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: black;
+      color: #eee;
+      transition: background-color 1s ease, color 0.5s ease;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      background: #222;
+      padding: 10px 15px;
+      border-radius: 6px;
+      min-width: 250px;
+      flex-grow: 1;
+    }
+
+    nav a {
+      color: #ff0000;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 15px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 0 15px 10px 0;
+      color: #ff0000;
+    }
+
+    #toggle-darkmode {
+      background-color: #111;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 10px #ff0000;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #ff0000;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .link-button {
+      background-color: #222;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      margin: 5px;
+      box-shadow: 0 0 10px red;
+      transition: background-color 0.3s;
+    }
+
+    .link-button:hover {
+      background-color: #333;
+    }
+
+    #unique-string {
+      font-family: monospace;
+      background: #111;
+      color: #eee;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 40px;
+      white-space: pre-wrap;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px red;
+      transition: box-shadow 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: #1e1a2e;
+      color: #ddd;
+    }
+
+    body.dark-mode nav,
+    body.dark-mode h1,
+    body.dark-mode h2 {
+      background-color: #300;
+      color: #fff;
+    }
+
+    body.dark-mode nav a {
+      color: #fff;
+    }
+
+    body.dark-mode .link-button {
+      background-color: #444;
+      color: #fff;
+    }
+
+    body.dark-mode #toggle-darkmode {
+      background-color: #ff0000;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#confira">CONFIRA A OPORTUNIDADE</a>
+      <a href="#credito">CRÉDITO PESSOAL</a>
+      <a href="#hospedagem">Hospedagem & VPS</a>
+      <a href="#seg">SEGUROS E CONSÓRCIOS</a>
+      <a href="#cabelo">Saúde Capilar</a>
+      <a href="#airbnb">Comece hj mesmo Airbnb</a>
+    </nav>
+    <h1>Detonado Resident Evil</h1>
+    <button id="toggle-darkmode">Modo Escuro</button>
+  </header>
+
+  <div class="video-container">
+    <iframe id="youtube-video" src="" title="Vídeo Informativo" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <div style="text-align:center; margin-bottom: 40px;">
+    <h2>Escolha um vídeo para assistir</h2>
+    <div id="video-buttons"></div>
+  </div>
+
+  <main>
+    <section id="confira">
+      <h2>CONFIRA A OPORTUNIDADE</h2>
+      <button class="link-button" data-url="#"><a href="#" target="_blank" id="novo">CONFERIR</a></button>
+    </section>
+
+    <section id="airbnb">
+      <h2>Airbnb comece hj mesmo</h2>
+      <button class="link-button" data-url="https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g">Comece no Airbnb hoje mesmo</button>
+    </section>
+
+    <section id="hospedagem">
+      <h2>Hospedagem de Sites & VPS Profissional</h2>
+      <button class="link-button" data-url="https://hostinger.com.br/?REFERRALCODE=1VICTOR444">Hostinger</button>
+      <button class="link-button" data-url="https://jogosantigos472302513.wordpress.com/maquinas-vps-temos-todas-as-opcoes-de-maqinas-para-voce/">VPS Profissional</button>
+      <button class="link-button" data-url="https://wa.me/5527999860405?text=Olá%2C%20tenho%20interesse%20em%20soluções%20de%20VPS%20e%20ERP.">Outras Opções</button>
+    </section>
+
+    <section id="seg">
+      <h2>Consórcios & Seguros</h2>
+      <button class="link-button" data-url="https://wa.me/5527999497001?text=ola%20quero%20saber%20sobre%20seguro%20e%20consorcio">Fale com um Consultor</button>
+    </section>
+
+    <section id="credito">
+      <h2>Crédito para Empresas</h2>
+      <button class="link-button" data-url="https://geocredibnkvitoria.com/">Simular Crédito</button>
+    </section>
+
+    <section id="cabelo">
+      <h2>Tratamentos Capilares</h2>
+      <button class="link-button" data-url="https://www.larissasaib.com.br/">Tricologia & Estética</button>
+    </section>
+
+    <div id="unique-string"></div>
+  </main>
+
+  <script>
+    const youtubeVideos = [
+      {
+        id: "ab736faPj-I",
+        titulo: "Resident Evil 1 REMAKE JILL DETONADO 100% 'Um Clássico Nunca Morre' #01"
+      },
+      {
+        id: "r5II3RTQ7jw",
+        titulo: "Resident Evil (PS1) - ZERADO com a Jill - MELHOR FINAL no clássico de Playstation 1"
+      }
+    ];
+
+    function gerarStringUnica(tamanho = 120) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*-_=+{}[]<>?';
+      let resultado = '';
+      for (let i = 0; i < tamanho; i++) {
+        resultado += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return resultado;
+    }
+
+    function carregarVideo(id) {
+      document.getElementById("youtube-video").src = `https://www.youtube.com/embed/${id}?rel=0`;
+    }
+
+    // Cores inspiradas em Resident Evil
+    const coresResidentEvil = [
+      '#ff0000', // vermelho sangue
+      '#111111', // preto
+      '#ffffff', // branco
+      '#800080', // roxo escuro
+      '#0033cc', // azul vívido
+      '#00cc66'  // verde erva
+    ];
+    let corIndex = 0;
+    let intervaloCor;
+
+    function iniciarMudancaResidentEvil() {
+      intervaloCor = setInterval(() => {
+        document.body.style.backgroundColor = coresResidentEvil[corIndex];
+        corIndex = (corIndex + 1) % coresResidentEvil.length;
+      }, 100000);
+    }
+
+    function pararMudancaResidentEvil() {
+      clearInterval(intervaloCor);
+      document.body.style.backgroundColor = '#1e1a2e';
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("unique-string").textContent =
+        "Identificador único:\n" + gerarStringUnica();
+
+      carregarVideo(youtubeVideos[0].id);
+
+      const container = document.getElementById("video-buttons");
+      youtubeVideos.forEach(video => {
+        const btn = document.createElement("button");
+        btn.textContent = video.titulo;
+        btn.className = "link-button";
+        btn.addEventListener("click", () => carregarVideo(video.id));
+        container.appendChild(btn);
+      });
+
+      document.querySelectorAll(".link-button[data-url]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const url = btn.getAttribute("data-url");
+          window.open(url, "_blank");
+        });
+      });
+
+      iniciarMudancaResidentEvil();
+
+      const toggleBtn = document.getElementById("toggle-darkmode");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+          toggleBtn.textContent = "Modo Claro";
+          pararMudancaResidentEvil();
+        } else {
+          toggleBtn.textContent = "Modo Escuro";
+          iniciarMudancaResidentEvil();
+        }
+      });
+    });
+  </script>
+
+  <script>
+    function gerar() {
+      const links = [
+        "https://randomizando003.netlify.app/",
+        "https://randomizando003.vercel.app/"
+      ];
+      const random = links[Math.floor(Math.random() * links.length)];
+      document.getElementById('novo').href = random;
+    }
+    setInterval(gerar, 600);
+  </script>
+</body>
+</html>
